@@ -29,15 +29,17 @@ def total(li):
 #input the months work before retirement
 n_month = int(input("What's the number of month that you wanna work before retire?"))
 #input the expected cost per size
-cost = int(input("What's the cost per size?"))
+cost = int(input("What's the cost expexted per size?"))
 ##operation
 print("Hello, my name is Huy and here is my flock ")
 info(sheep)
 for i in range(n_month):
     time.sleep(0.75) 
     sheep = [(lo + 50 ) for lo in sheep]
+    print()
     print("MONTH {0}:".format(i+1))
     print("One month has passed and here is my flock ")
     info(sheep)
+print()
 print("My flock has the size in total: ", total(sheep))
-print("I would get: "+ str(total(sheep))+" * "+str(cost)+" = "+str(total(sheep)*cost))
+print("I would get: "+ str(total(sheep))+" * "+str(cost)+"$"+" = "+str(total(sheep)*cost)+"$")

@@ -1,3 +1,4 @@
+##funtion print all the list with comma between elements
 def Ouritem():
         print("Our items: ",end="")
         for i in range(len(shop)):
@@ -9,6 +10,7 @@ def Ouritem():
 shop = ["T-Shirt","Sweater"]
 
 choice = ""
+#--------------------------------------MAIN OPERATION -----------------------------------
 while choice.lower() != "e":
     choice = input("Welcome to our shop, what do you want (C, R, U, D)?(press E to exit)")
    
